@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 .item:hover {
-    background-color: aqua;
+    background-color: rgb(175, 175, 175);
 }
 
 .name {

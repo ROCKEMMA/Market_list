@@ -1,5 +1,5 @@
 // Lista de tareas
-import { tareas } from "../data_todo.js";
+import { tareas } from "./data_todo.js";
 
 function cargar_tareas() {
 
