@@ -1,0 +1,14 @@
+#formulario {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#formulario input {
+    margin: 5px;
+    font-size: 16px;
+}
+
+#formulario button {
+    padding: 5px 10px;
+    font-size: 16px;
+}
