@@ -31,13 +31,14 @@ function addTask(texto, precio) {
     tareas.push(nuevaTarea);
     saveTasksToStorage(tareas);
     uploadTasks();
+    console.log(tareas);
 }
 
-function deleteStak(id) {
+function deleteTask(id) {
     tareas = getTasksFromStorage();
     tareas = tareas.filter(tarea => tarea.id !== id);
     saveTasksToStorage(tareas);
     uploadTasks();
 }
 
-export { uploadTasks, addTask, deleteStak };
+export { uploadTasks, addTask, deleteTask };

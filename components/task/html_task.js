@@ -1,4 +1,4 @@
-import { deleteStak } from "./task.js";
+import { deleteTask } from "./task.js";
 
 function htmlItem(tarea) {
     const li = document.createElement('li');
@@ -15,7 +15,7 @@ function htmlItem(tarea) {
     const botonEliminar = document.createElement('button');
     botonEliminar.className = "delete-button";
     botonEliminar.textContent = "Eliminar";
-    botonEliminar.addEventListener('click', () => deleteStak(tarea.id));
+    botonEliminar.addEventListener('click', () => deleteTask(tarea.id));
 
     li.appendChild(spanMensaje);
     li.appendChild(spanPrecio);
