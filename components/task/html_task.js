@@ -14,7 +14,7 @@ function htmlItem(tarea) {
 
     const botonEliminar = document.createElement('button');
     botonEliminar.className = "delete-button";
-    botonEliminar.textContent = "Eliminar";
+    botonEliminar.textContent = "X";
     botonEliminar.addEventListener('click', () => deleteTask(tarea.id));
 
     li.appendChild(spanMensaje);
