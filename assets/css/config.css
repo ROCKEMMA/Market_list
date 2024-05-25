@@ -27,6 +27,14 @@ body {
     gap: 1rem;
 }
 
+.ocultar {
+    display: none;
+}
+
+.acomodar {
+    grid-template-columns: 1fr auto;
+}
+
 @media only screen and (max-width: 480px) {
     html {
         font-size: 10px;
