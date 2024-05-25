@@ -12,10 +12,13 @@ function downloadAsImage() {
 
     document.querySelector("#download").classList.add('ocultar');
     document.querySelector("#formulario").classList.add('ocultar');
-    document.querySelector(".item").classList.add('acomodar');
     document.querySelectorAll(".delete-button").forEach(btn=>{
         btn.classList.add('ocultar');
-    })
+    });
+    document.querySelectorAll(".item").forEach(box =>{
+        box.classList.add('acomodar');
+    });  
+
 
     const contenido = document.querySelector('#root');
     html2canvas(contenido).then(canvas => {
@@ -27,8 +30,11 @@ function downloadAsImage() {
 
     document.querySelector("#download").classList.remove('ocultar');
     document.querySelector("#formulario").classList.remove('ocultar');
-        document.querySelector(".item").classList.remove('acomodar');
     document.querySelectorAll(".delete-button").forEach(btn=>{
         btn.classList.remove('ocultar');
-    })
+    });
+    document.querySelectorAll(".item").forEach(box =>{
+        box.classList.remove('acomodar');
+    });  
+
 }
