@@ -9,4 +9,4 @@ function getTasksFromStorage() {
 }
 
 
-export { getTasksFromStorage, saveTasksToStorage };
+export {LOCAL_STORAGE_KEY, getTasksFromStorage, saveTasksToStorage};

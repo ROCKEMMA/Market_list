@@ -1,17 +1,9 @@
-import { actualizarTotal } from "./header.js";
-
-function loadHtmlHeaderIn(html_box_id){
-    document.querySelector(html_box_id).appendChild(htmlHeader());
-    actualizarTotal();
-}
-
-const htmlHeader = ()=> {
-
+const htmlHeader = (total)=> {
     const div = document.createElement('div');
 
     const span = document.createElement('span');
     span.className = "total";
-    span.textContent = `Q ${10}.00`;
+    span.textContent = `Q ${total}.00`;
 
     const p = document.createElement('p');
     p.className = "title";
@@ -23,5 +15,4 @@ const htmlHeader = ()=> {
     return div;
 }
 
-
-export { loadHtmlHeaderIn }
+export { htmlHeader }

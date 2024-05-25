@@ -1,6 +1,7 @@
 import { getTasksFromStorage, saveTasksToStorage } from "./../../utils/storage.js";
 import { htmlItem } from "./html_task.js";
 import { setupTaskForm } from "../taskForm/taskForm.js";
+import { loadHtmlHeaderIn } from "../header/header.js";
 
 let tareas = getTasksFromStorage();
 
@@ -16,7 +17,6 @@ function uploadTasks() {
     tareas.forEach((tarea) => {
         ul.appendChild(htmlItem(tarea));
     });
-
     //Cartar evento para elimiar tareas.
     setupTaskForm();
 }

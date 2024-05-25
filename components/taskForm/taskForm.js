@@ -1,3 +1,5 @@
+import { getTasksFromStorage } from "../../utils/storage.js";
+import { loadHtmlHeaderIn } from "../header/header.js";
 import { addTask } from "../task/task.js";
 
 function setupTaskForm() {
@@ -12,8 +14,9 @@ function setupTaskForm() {
             document.getElementById('nuevo-item-texto').value = '';
             document.getElementById('nuevo-item-precio').value = '';
         }
-
     });
+
+    loadHtmlHeaderIn(getTasksFromStorage());
 }
 
 export { setupTaskForm };

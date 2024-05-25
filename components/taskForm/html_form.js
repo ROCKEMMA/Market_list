@@ -1,10 +1,11 @@
 import { setupTaskForm } from "./taskForm.js";
 
-function loadHtmlFormIn(html_box_id){
-    document.querySelector(html_box_id).appendChild(htmlForm());
+function loadHtmlFormIn(){
+    let form_DOM = document.querySelector("#formulario");
+    form_DOM.innerHTML = ''; 
+    form_DOM.appendChild(htmlForm());
     setupTaskForm();
 }
-
 
 const htmlForm = ()=>{
 

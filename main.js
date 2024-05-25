@@ -1,6 +1,7 @@
+import { getTasksFromStorage } from "./utils/storage.js";
 import { uploadTasks } from "./components/task/task.js";
 import { loadHtmlFormIn } from "./components/taskForm/html_form.js";
-import { loadHtmlHeaderIn } from "./components/header/html_header.js";
+import { loadHtmlHeaderIn } from "./components/header/header.js";
 
 const body = document.querySelector("#root");
 
@@ -10,6 +11,9 @@ body.innerHTML = `
     <div id="formulario"></div>
     `;
 
-loadHtmlFormIn("#formulario");
+let cart = getTasksFromStorage();
+
+// COMPONENTES DE LA WEB
+loadHtmlHeaderIn(cart);
+loadHtmlFormIn();
 uploadTasks();
-loadHtmlHeaderIn("#header");
