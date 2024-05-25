@@ -28,12 +28,12 @@ const htmlForm = ()=>{
     button_agregar.id = "agregar-item";
     button_agregar.textContent = "Carrito";
 
-    const button_descuento = document.createElement('button');
+/*     const button_descuento = document.createElement('button');
     button_descuento.id = "agregar-descuento";
-    button_descuento.textContent = "Descuento";
+    button_descuento.textContent = "Descuento"; */
 
     div.appendChild(input_texto);
-    div.appendChild(button_descuento);
+/*     div.appendChild(button_descuento); */
     div.appendChild(input_numero);
     div.appendChild(button_agregar);
 

@@ -3,7 +3,7 @@ const htmlHeader = (total)=> {
 
     const span = document.createElement('span');
     span.className = "total";
-    span.textContent = `Q ${total}.00`;
+    span.textContent = `Q ${total.toFixed(2)}`;
 
     const p = document.createElement('p');
     p.className = "title";
