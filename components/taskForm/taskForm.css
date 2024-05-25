@@ -2,13 +2,29 @@
     text-align: center;
     margin-top: 20px;
 }
-
+#formulario > div {
+    display: grid;
+    grid-template-columns: 1fr 12rem;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+}
 #formulario input {
-    margin: 5px;
-    font-size: 16px;
+    outline: none;
+    padding: 1rem 0.5rem;
+    font-size: 1.6rem;
 }
 
 #formulario button {
     padding: 5px 10px;
     font-size: 16px;
+    border-radius: 5rem;
+    border: none;
+}
+#formulario #agregar-descuento{
+    background-color: rgb(233, 233, 233);
+    color: rgb(43, 127, 236);
+}
+#formulario #agregar-item {
+    background-color: green;
+    color: white;
 }
