@@ -11,7 +11,7 @@ body.innerHTML = `
     <header id="header"></header>
     <div class="container"></div>
     <div id="formulario"></div>
-    `;
+`;
 
 let cart = getTasksFromStorage();
 
@@ -20,3 +20,15 @@ loadHtmlSectionDownload();
 loadHtmlHeaderIn(cart);
 loadHtmlFormIn();
 uploadTasks();
+
+// ✅ Registrar Service Worker (después de cargar todo)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', async () => {
+    try {
+      const reg = await navigator.serviceWorker.register('/sw.js');
+      console.log('✅ Service Worker registrado', reg);
+    } catch (err) {
+      console.error('❌ Error en SW:', err);
+    }
+  });
+}

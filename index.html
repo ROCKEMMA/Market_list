@@ -4,16 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    
+    <meta name="theme-color" content="#000000">
+    <!-- Color de la barra de estado (debe coincidir con theme_color del manifest) -->
+
+    <!-- Título y descripción -->
     <title>Lista de Compras</title>
-    
-    <!-- Archivos de diseño -->
-    <link rel="stylesheet" href="components/sectionDownload/download.css">
-    <link rel="stylesheet" href="components/header/header.css">
-    <link rel="stylesheet" href="components/task/task.css">
-    <link rel="stylesheet" href="components/taskForm/taskForm.css">
-    <link rel="stylesheet" href="assets/css/config.css">
+    <meta name="description" content="App para gestionar listas de compras">
+
+    <!-- Manifest y favicon -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon"> <!-- Para navegadores antiguos -->
+    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml"> <!-- Modernos -->
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png"> <!-- iOS -->
+
+    <!-- Script externo (html2canvas) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="/components/sectionDownload/download.css">
+    <link rel="stylesheet" href="/components/header/header.css">
+    <link rel="stylesheet" href="/components/task/task.css">
+    <link rel="stylesheet" href="/components/taskForm/taskForm.css">
+    <link rel="stylesheet" href="/assets/css/config.css">
 </head>
 
 <body>
